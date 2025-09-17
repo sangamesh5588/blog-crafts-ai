@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Premium Blog Platform Design System - AI-powered blog generation theme */
 
 @layer base {
   :root {
@@ -17,24 +15,40 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Premium purple-blue gradient theme */
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 258 100% 80%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 240 5% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 258 90% 66%;
+
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(258 90% 66%), hsl(280 100% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(240 100% 97%), hsl(258 100% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(258 90% 66%) 0%, hsl(280 100% 70%) 50%, hsl(300 100% 75%) 100%);
+    
+    /* Premium shadows */
+    --shadow-premium: 0 20px 40px -12px hsl(258 90% 66% / 0.25);
+    --shadow-glow: 0 0 40px hsl(258 100% 80% / 0.3);
+    --shadow-card: 0 4px 20px hsl(240 4% 46% / 0.1);
+    
+    /* Animation variables */
+    --transition-premium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
